@@ -8,6 +8,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # See https://docs.djangoproject.com/en/6.0/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
+# Apenas neste cenário de testes. Em produção trabalharemos com o arquivo .env que não sobe no repo
 SECRET_KEY = "django-insecure-al6#mk!vvrc1uuehi&wy$h@8&_7qq-ty!et6^!e@+%kw=m3_)y"
 
 # SECURITY WARNING: don't run with debug turned on in production!
