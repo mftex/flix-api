@@ -27,3 +27,9 @@ class MovieModelSerializer(serializers.ModelSerializer):
         if len(value) > 40:
             raise serializers.ValidationError(f'Tamanho do campo excede o limite de 40 caraceteres. Caracteres incluídos: {len(value)}')
         return value
+    
+class MovieStatsSerializer(serializers.Serializer):
+    total_movies = serializers.IntegerField()
+    movies_by_genre = serializers.ListField()
+    total_reviews = serializers.IntegerField()
+    average_stars = serializers.FloatField()
