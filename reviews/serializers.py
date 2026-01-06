@@ -7,6 +7,7 @@ class ReviewSerializer(serializers.ModelSerializer):
         model = Review
         fields = '__all__'
 
+
 class ReviewRetriveUpdateDestroySerializer(serializers.ModelSerializer):
     class Meta:
         model = Review
